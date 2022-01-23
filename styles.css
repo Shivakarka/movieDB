@@ -378,6 +378,10 @@ img{
     .movie-misc-info li:nth-child(2){
         margin: 0.8rem 0;
     }
+
+    #home{
+        display: none;
+    }
 }
 
 @media(min-width: 800px){

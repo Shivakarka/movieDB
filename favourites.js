@@ -4,7 +4,7 @@ document.querySelector('ul').addEventListener('click',handlerClick2)
 
 
 
-//function will loop and create all the movie elements of favourites
+//function will loop through localstorage and create all the movie elements of favourites
 let id="";
 for(let i =0;i<=localStorage.length-1;i++){
   id=localStorage.key(i);

@@ -55,7 +55,7 @@ function displayMovieList(movies){
 }
 
 //this function displays the full movie details when search item is clicked
-function loadMovieDetails(){
+async function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list-item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {

@@ -14,7 +14,7 @@ for(let i =0;i<=localStorage.length-1;i++){
 //async function to fetch movie details
 async function getFav(id) {
 try{
-  const URL = `http://www.omdbapi.com/?i=${id}&apikey=102bfbfd`;
+  const URL = `https://www.omdbapi.com/?i=${id}&apikey=102bfbfd`;
   const res = await fetch(`${URL}`);
   const data = await res.json();
   // console.log(data);

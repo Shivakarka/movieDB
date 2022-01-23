@@ -61,7 +61,9 @@ async function loadMovieDetails(){
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
             searchList.classList.add('hide-search-list');   //hides the search bar
-            movieSearchBox.value = "";                      //changes the search input to empty again
+            movieSearchBox.value = "";                       //changes the search input to empty again
+            let loader =   `<div class="loader" id="loader"></div>`;    // loading animation
+            resultGrid.innerHTML = loader;                        
             const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=102bfbfd`); 
             const movieDetails = await result.json();
             displayMovieDetails(movieDetails);

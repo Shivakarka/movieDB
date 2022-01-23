@@ -42,9 +42,9 @@ function addMovieDetails(details){
       <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
   </div>
   <div class = "movie-info">
-      <h3 class = "movie-title">${details.Title}</h3>
+      <h3 class = "movie-fav-title">${details.Title}</h3>
       <ul class = "movie-misc-info">
-          <li class = "year">Year: ${details.Year}</li>
+          <li class = "director">Director: ${details.Director}</li>
           <li class = "rating">IMDB Rating: ${details.imdbRating}</li>
           <li class = "released">Released: ${details.Released}</li>
           <li> <button class="${movieId}" id="del" name="remove"}>Remove</button> </li>

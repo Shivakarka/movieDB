@@ -96,6 +96,7 @@ function displayMovieDetails(movieDetails){
             <li class = "released">Released: ${movieDetails.Released}</li>
         </ul>
         <p class = "genre"><b>Genre:</b> ${movieDetails.Genre}</p>
+        <p class = "director"><b>Director:</b> ${movieDetails.Director}</p>
         <p class = "writer"><b>Writer:</b> ${movieDetails.Writer}</p>
         <p class = "actors"><b>Actors: </b>${movieDetails.Actors}</p>
         <p class = "plot"><b>Plot:</b> ${movieDetails.Plot}</p>

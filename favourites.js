@@ -67,7 +67,6 @@ function addMovieDetails(details){
 
 //function to remove movie from local storage
 function removeFav(id){
-   console.log(id);
   localStorage.removeItem(id);
 }
 

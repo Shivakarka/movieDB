@@ -5,6 +5,9 @@
 <li> Users can search imdb movie ratings.</li>
 <br>
 
+![image](https://user-images.githubusercontent.com/64298475/150688277-c97360dd-b0a0-4510-a8e1-c648c317e889.png)
+
+
 # Problem Statement
 
 Create a mini IMDB clone app. Use ONLY vanilla javascript, no libraries or frameworks allowed for Javascript (you can use any css framework like Bootstrap).

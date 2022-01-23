@@ -366,15 +366,18 @@ img{
     align-content: space-between;
     justify-content: baseline;
     margin: 2rem auto;
+    border-bottom: 4px solid #fff;
 }
 
 .fav-grid{
     display: inline;
+    
 }
 
 .fav-container{
     background-color:  var(--violet-color);
     color: #171717;
+    
 }
 
 /* media queries for different screen sizes */

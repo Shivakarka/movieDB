@@ -3,17 +3,11 @@ document.querySelector('.clear').addEventListener('click',handlerClick)
 document.querySelector('ul').addEventListener('click',handlerClick2)
 
 
-//Creating an array to get items from localStorage
-let movieList = [];
-for(let i=0;i<=localStorage.length-1;i++){
-  movieList.push(localStorage.key(i));  
-}
-
 
 //function will loop and create all the movie elements of favourites
 let id="";
-for(let i =0;i<movieList.length;i++){
-  id=movieList[i];
+for(let i =0;i<=localStorage.length-1;i++){
+  id=localStorage.key(i);
   getFav(id);
 }
 
@@ -23,7 +17,7 @@ try{
   const URL = `http://www.omdbapi.com/?i=${id}&apikey=102bfbfd`;
   const res = await fetch(`${URL}`);
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   if(data.Response == "True")  addMovieDetails(data);
  
 } catch (err) {

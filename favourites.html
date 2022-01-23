@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB favourites list</title>
+    <!-- font awesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css stylesheet -->
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<!-- runs the getFav funtion on load -->
+<body onload="getFav()">
+    
+    <div class = "wrapper">
+        <!-- navbar/logo -->
+        <div class = "logo">
+            <div class = "container">
+                <a href="index.html" class="navbar">Movie<span>DB.</span></a>
+                <a href="index.html" class="navbar"><i class="fa fa-home"></i></a>
+                <a href="./favourites.html" class="navbar">Favourites</a>
+            </div>
+          
+        </div>
+        <!-- end of logo -->
+
+        <!-- result container -->
+        <div class="delete">
+            <button class="clear" name="delete" onclick="localStorage.clear()"> clear all</button>
+        </div>
+    
+        <div class = "fav-container">
+           
+                <ul class = "fav-grid" id = "fav-grid">
+                    <!-- movie information here -->
+                    <li> </li>
+                </ul>
+          
+        </div>
+        <!-- end of result container -->
+    </div>
+
+
+    <!-- favourites app js -->
+   
+    <script src = "favourites.js"></script>
+
+</body>
+</html>
